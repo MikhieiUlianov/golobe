@@ -1,0 +1,89 @@
+{
+  "footerNav": [
+    {
+      "id": 1,
+      "title": "Our Destinations",
+      "slug": "our-destinations",
+      "links": [
+        { "id": 1, "title": "Canada", "slug": "canada" },
+        { "id": 2, "title": "Alaska", "slug": "alaska" },
+        { "id": 3, "title": "France", "slug": "france" },
+        { "id": 4, "title": "Iceland", "slug": "iceland" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Our Activities",
+      "slug": "our-activities",
+      "links": [
+        { "id": 1, "title": "Northern Lights", "slug": "northern-lights" },
+        {
+          "id": 2,
+          "title": "Cruising & Sailing",
+          "slug": "cruising-and-sailing"
+        },
+        { "id": 3, "title": "Multi-activities", "slug": "multi-activities" },
+        { "id": 4, "title": "Kayaking", "slug": "kayaking" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Travel Blogs",
+      "slug": "travel-blogs",
+      "links": [
+        { "id": 1, "title": "Bali Travel Guide", "slug": "bali-travel-guide" },
+        {
+          "id": 2,
+          "title": "Sri Lanka Travel Guide",
+          "slug": "sri-lanka-travel-guide"
+        },
+        { "id": 3, "title": "Peru Travel Guide", "slug": "peru-travel-guide" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "About Us",
+      "slug": "about-us",
+      "links": [
+        { "id": 1, "title": "Our Story", "slug": "our-story" },
+        { "id": 2, "title": "Work With Us", "slug": "work-with-us" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Contact Us",
+      "slug": "contact-us",
+      "links": [
+        { "id": 1, "title": "Email", "slug": "email" },
+        { "id": 2, "title": "Phone", "slug": "phone" }
+      ]
+    }
+  ],
+
+  "socialLinks": [
+    {
+      "id": 1,
+      "name": "facebook",
+      "url": "https://facebook.com",
+      "icon": "/icons/social/facebook.svg"
+    },
+    {
+      "id": 2,
+      "name": "twitter",
+      "url": "https://twitter.com",
+      "icon": "/icons/social/twitter.svg"
+    },
+    {
+      "id": 3,
+      "name": "youtube",
+      "url": "https://youtube.com",
+      "icon": "/icons/social/youtube.svg"
+    },
+    {
+      "id": 4,
+      "name": "instagram",
+      "url": "https://instagram.com",
+      "icon": "/icons/social/instagram.svg"
+    }
+  ]
+}

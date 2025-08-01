@@ -1,0 +1,132 @@
+@use "../../sass/variables.scss" as *;
+
+.header {
+  background: white;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 90px;
+  }
+  &__desktop {
+    display: none;
+  }
+
+  &__find {
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+
+    &-text {
+      display: none;
+    }
+
+    &-block {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5.5px;
+      cursor: pointer;
+      &.active {
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 5px;
+          border-bottom: 4px solid $mintSemiDark;
+          bottom: -33px;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    width: 110.36px;
+    height: 36px;
+  }
+
+  &__login {
+    width: 177px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+
+    #signBtn {
+      width: 104px;
+      height: 48px;
+      padding: 10px 24px;
+      background-color: $dark;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 4px;
+    }
+  }
+
+  &__logged {
+    display: flex;
+    align-items: center;
+
+    &-block {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    &-divider {
+      display: block;
+      width: 4px;
+      height: 17px;
+      margin-left: 16px;
+      background-color: $dark;
+    }
+
+    &-profile {
+      margin-left: 32px;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+
+      &-img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__wrapper {
+      background: transparent;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 21px 104px 21px 104px;
+      height: 90px;
+    }
+
+    &__find {
+      &-text {
+        display: block;
+      }
+    }
+    &__desktop {
+      display: block;
+    }
+  }
+}

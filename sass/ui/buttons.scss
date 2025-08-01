@@ -1,0 +1,119 @@
+@use "../mixins.scss" as *;
+@use "../variables.scss" as *;
+
+.button-send {
+  @include button;
+  width: 104px;
+  height: 56px;
+  background-color: $dark;
+  color: white;
+}
+
+/* 
+.btn-S {
+    @include button;
+    background: $mintSemiDark;
+    width: 82px;
+    height: 32px;
+}
+
+.btn-S-mint {
+    @include button;
+    background: $mint;
+    width: 82px;
+    height: 32px;
+}
+
+.btn-S-gap {
+    border: 1px solid $mintSemiDark;
+    border-radius: 4px;
+    padding: 0px;
+    display: inline-block;
+
+    >button {
+        @include button;
+        background: $mintLight;
+        border: 1px solid white;
+        width: 82px;
+            height: 32px;
+    }
+}
+
+.btn-S-dark {
+    @include button;
+    background: $mintDark;
+    width: 82px;
+    height: 32px;
+}
+
+.btn-M {
+    @include button;
+    background: $mintSemiDark;
+    width: 82px;
+    height: 40px;
+}
+
+.btn-M-mint {
+    @include button;
+    background: $mint;
+    width: 82px;
+    height: 40px;
+}
+
+.btn-M-gap {
+    border: 1px solid $mintSemiDark;
+    border-radius: 4px;
+    padding: 0px;
+    display: inline-block;
+
+    >button {
+        @include button;
+        background: $mintLight;
+        border: 1px solid white;
+        width: 82px;
+            height: 40px;
+    }
+}
+
+.btn-M-dark {
+    @include button;
+    background: $mintDark;
+    width: 82px;
+    height: 40px;
+}
+
+.btn-L {
+    @include button;
+    background: $mintSemiDark;
+    width: 82px;
+    height: 48px;
+}
+
+.btn-L-mint {
+    @include button;
+    background: $mint;
+    width: 82px;
+    height: 48px;
+}
+
+.btn-L-gap {
+    border: 1px solid $mintSemiDark;
+    border-radius: 4px;
+    padding: 0px;
+    display: inline-block;
+
+    >button {
+        @include button;
+        background: $mintLight;
+        border: 1px solid white;
+        width: 82px;
+        height: 48px;
+    }
+}
+
+.btn-L-dark {
+    @include button;
+    background: $mintDark;
+    width: 82px;
+    height: 48px;
+} */

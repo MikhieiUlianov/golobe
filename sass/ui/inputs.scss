@@ -1,0 +1,22 @@
+@use "../mixins.scss" as *;
+@use "../variables.scss" as *;
+
+.input {
+  @include input;
+  padding: 8px 0px 8px 16px;
+
+  &-arrow {
+    @include input;
+    padding: 4px 0px 4px 16px;
+  }
+
+  &-search {
+    @include input;
+    padding: 4px 16px 4px 0px;
+
+    &-arrow {
+      @include input;
+      padding: 4px 0px 4px 0px;
+    }
+  }
+}

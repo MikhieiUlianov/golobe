@@ -1,0 +1,196 @@
+@use "../../sass/variables.scss" as *;
+
+.footer {
+  background-color: $mint;
+  &__form {
+    background-color: $mint;
+    min-height: 305px;
+    padding: 24px 24px 0 24px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+    background: rgb(205, 234, 225);
+
+    &-title {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &-subtitle {
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    &-text {
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    form {
+      margin-top: 24px;
+      gap: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-btn {
+      margin: 0 auto;
+    }
+
+    &-input {
+      width: 100%;
+      height: 56px;
+      padding: 8px 0 8px 16px;
+      margin: 0 auto;
+    }
+
+    &-img {
+      width: 400px;
+      height: 296px;
+      display: none;
+    }
+  }
+  &__nav {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 50px;
+
+    &-social {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      width: 120px;
+
+      &-links {
+        display: flex;
+        gap: 13px;
+
+        &-link {
+          img {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    &-blocks {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 35px;
+    }
+    &-block {
+      &-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        gap: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    margin-top: 200px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    place-content: end;
+    position: relative;
+    background-color: $mint;
+
+    padding: 0 70px 50px 70px;
+    &__form {
+      top: -360px;
+      display: grid;
+      grid-template-columns: 595px 400px;
+      gap: 100px;
+      position: absolute;
+      margin: 0 auto;
+
+      &-title {
+        text-align: start;
+        margin: 0;
+        width: 364px;
+      }
+
+      &-text {
+        text-align: start;
+      }
+
+      &-subtitle {
+        text-align: start;
+        margin-top: 24px;
+      }
+
+      form {
+        margin-top: 24px;
+        gap: 16px;
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        padding-bottom: 24px;
+      }
+
+      &-input {
+        width: 473px;
+        height: 56px;
+        padding: 8px 0 8px 16px;
+      }
+
+      &-img {
+        display: block;
+      }
+    }
+
+    &__nav {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 50px;
+
+      &-social {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 120px;
+        margin: 0 auto;
+
+        &-links {
+          display: flex;
+          gap: 13px;
+
+          &-link {
+            img {
+              display: block;
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+      &-blocks {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 35px;
+      }
+      &-block {
+        margin: 0 auto;
+        &-list {
+          display: flex;
+          flex-direction: column;
+          margin-top: 16px;
+          gap: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer {
+    &__form {
+      padding: 24px 50px;
+      gap: 350px;
+    }
+  }
+}
