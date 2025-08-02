@@ -85,5 +85,72 @@
       "url": "https://instagram.com",
       "icon": "/icons/social/instagram.svg"
     }
+  ],
+  "places": [
+    {
+      "img": "/img/places/baku.jpeg",
+      "id": "1tgqwefdc",
+      "title": "Istanbul, Turkey"
+    },
+    {
+      "img": "/img/places/sydney.jpeg",
+      "id": "1mtix",
+      "title": "Sydney, Australia"
+    },
+    {
+      "img": "/img/places/Istanbul.jpeg",
+      "id": " xhuascqw1",
+      "title": "Istanbul, Turkey"
+    },
+    {
+      "img": "/img/places/baku.jpeg",
+      "id": "bryhrt1",
+      "title": "Baku, Azerbaijan"
+    },
+    {
+      "img": "/img/places/baku.jpeg",
+      "id": "1qwsdfv",
+      "title": "Istanbul, Turkey"
+    },
+    {
+      "img": "/img/places/sydney.jpeg",
+      "id": "x32431245c1",
+      "title": "Sydney, Australia"
+    },
+    {
+      "img": "/img/places/Istanbul.jpeg",
+      "id": "5m868o4i4",
+      "title": "Istanbul, Turkey"
+    },
+    {
+      "img": "/img/places/baku.jpeg",
+      "id": "b3753568m241",
+      "title": "Baku, Azerbaijan"
+    },
+    {
+      "img": "/img/places/baku.jpeg",
+      "id": "2f358yb32v51",
+      "title": "Istanbul, Turkey"
+    }
+  ],
+  "reviews": [
+    {
+      "title": "Amazing Experience!",
+      "text": "I loved every part of my trip with Golobe. Everything was perfectly organized and hassle-free.",
+      "rating": "5",
+      "name": "Alice Johnson",
+      "from": "New York, USA",
+      "picture": "/img/reviews/picture.jpeg",
+      "id": "sghevrtvunabre"
+    },
+    {
+      "title": "Comfortable and Reliable",
+      "text": "Great service, comfortable flights and excellent support throughout. Highly recommended!",
+      "rating": "4",
+      "name": "Liam Smith",
+      "from": "London, UK",
+      "picture": "/img/reviews/picture.jpeg",
+      "id": "sghevtvunabre"
+    }
   ]
 }

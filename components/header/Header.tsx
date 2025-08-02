@@ -2,6 +2,7 @@
 
 import "@/components/header/header.scss";
 import { useState } from "react";
+import ButtonWithText from "../UI/button-with-text/button-with-text";
 export default function Header() {
   const [logged, setLogged] = useState(true);
 
@@ -9,18 +10,8 @@ export default function Header() {
     <div className="header">
       <div className="header__wrapper">
         <div className="header__find">
-          <button className="header__find-block">
-            <img src="/icons/header/airplane.svg" alt="airplane" />
-            <div className="fw-600 fz-14 f-montserrat header__find-text">
-              Find Flight
-            </div>
-          </button>
-          <button className="header__find-block">
-            <img src="/icons/header/bed-black.svg" alt="bed" />
-            <div className="fw-600 fz-14 f-montserrat header__find-text">
-              Find Stays
-            </div>
-          </button>
+          <ButtonWithText name="Find Flight" img="/icons/header/airplane.svg" />
+          <ButtonWithText name="Find Stays" img="/icons/header/bed-black.svg" />
         </div>
 
         <img className="header__logo" src="/icons/logo.svg" alt="logo" />

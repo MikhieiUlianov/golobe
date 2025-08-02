@@ -1,0 +1,26 @@
+@use "../../../sass/variables.scss" as *;
+
+.button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  gap: 15px;
+  width: 144px;
+  min-height: 48px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  &.green {
+    background: $mint;
+  }
+  .actions {
+    display: flex;
+    align-items: end;
+    gap: 25px;
+    position: relative;
+    z-index: 4;
+  }
+  &.center {
+    margin: 0 auto;
+  }
+}

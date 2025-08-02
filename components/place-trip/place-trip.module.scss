@@ -1,0 +1,62 @@
+@use "../../sass/variables.scss" as *;
+
+.place-trip {
+  width: 1140px;
+  margin: 80px auto 0 auto;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      width: 149px;
+      height: 40px;
+      border: 1px solid $mint;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+  }
+  h3 {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(17, 34, 17);
+    opacity: 0.7;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 58px;
+    li {
+      display: flex;
+      padding: 15px;
+      gap: 15px;
+      border-radius: 16px;
+      box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+      img {
+        object-fit: cover;
+      }
+      h4 {
+        text-align: left;
+        opacity: 0.7;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgb(17, 34, 17);
+      }
+      p {
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}

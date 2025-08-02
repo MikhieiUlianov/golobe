@@ -1,0 +1,25 @@
+@use "../../../sass/variables.scss" as *;
+.button-with-text {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.5px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-bottom: 4px solid transparent;
+    bottom: -25px;
+    transition: border-color 0.3s;
+  }
+
+  &.active {
+    &::after {
+      border-bottom-color: $mintSemiDark;
+    }
+  }
+}

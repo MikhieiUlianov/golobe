@@ -1,4 +1,6 @@
 import "@/components/footer/footer.scss";
+import Input from "../UI/input/input";
+
 type SocialType = {
   id: string;
   url: string;
@@ -73,11 +75,10 @@ const Footer = async () => {
               stories.
             </div>
             <form>
-              <input
-                className="footer__form-input input bg-white"
-                type="text"
+              <Input
                 name="name"
-                placeholder="Label"
+                placeholder="Find Travel"
+                style={{ width: "450px" }}
               />
               <button className="button-send footer__form-btn">Button</button>
             </form>

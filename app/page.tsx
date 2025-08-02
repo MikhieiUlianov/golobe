@@ -1,6 +1,17 @@
+import Choice from "@/components/choice/choice";
+import FindTrip from "@/components/find-trip/find-trip";
+import PlaceTrip from "@/components/place-trip/place-trip";
 import Promo from "@/components/promo/promo";
-import Image from "next/image";
+import Reviews from "@/components/reviews/reviews";
 
 export default function Home() {
-  return <Promo />;
+  return (
+    <>
+      <Promo />
+      <FindTrip />
+      <PlaceTrip />
+      <Choice />
+      <Reviews />
+    </>
+  );
 }

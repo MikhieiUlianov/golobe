@@ -1,0 +1,36 @@
+@use "../../../sass/variables.scss" as *;
+
+.input {
+  position: relative;
+  border-radius: 4px 4px 0px 0px;
+  padding: 15px 10px;
+  background: white;
+  height: 56px;
+  border: 1px solid black;
+  label {
+    height: 15px;
+    z-index: 2;
+    position: absolute;
+    top: -15px;
+    padding: 0px 20px 0px 5px;
+    text-align: center;
+    margin-left: 10px;
+    background: white;
+  }
+  input {
+    width: 100%;
+    align-items: center;
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+  &__correct {
+    border-color: $mint;
+  }
+  &__error {
+    border-color: $mint;
+  }
+  &:disabled {
+    border-color: $gray;
+  }
+}
