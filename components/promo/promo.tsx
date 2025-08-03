@@ -1,6 +1,4 @@
 import Image from "next/image";
-
-import Header from "@/components/header/Header";
 import classes from "./promo.module.scss";
 
 export default function Promo() {
@@ -14,9 +12,7 @@ export default function Promo() {
           fill
         />
       </p>
-      <div>
-        <Header />
-      </div>
+      <div></div>
       <div className={classes.promo__texts}>
         <h1>Helping Others</h1>
         <h2>Live & Travel</h2>

@@ -1,0 +1,70 @@
+@use "../../sass//variables.scss" as *;
+
+.fall-into-example {
+  margin-top: 25px;
+  width: 1140px;
+  display: grid;
+  grid-template-columns: 550px 1fr;
+  gap: 25px;
+  .info {
+    border-radius: 20px;
+    background-color: $mint;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    header {
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 51px;
+      }
+      div {
+        align-items: center;
+        width: 80px;
+        min-height: 62px;
+        background-color: white;
+        display: flex;
+        border-radius: 8px;
+        padding: 8px;
+        flex-direction: column;
+        gap: 5px;
+      }
+      span {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 25px;
+  }
+  .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-rows: repeat(2, 200px);
+    img {
+      height: 200px;
+      width: 315px;
+      object-fit: cover;
+    }
+  }
+  a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 4px;
+    height: 48px;
+    padding: 8px 16px;
+    margin-top: auto;
+  }
+}

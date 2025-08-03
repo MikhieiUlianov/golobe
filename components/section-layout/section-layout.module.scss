@@ -1,0 +1,36 @@
+@use "../../sass/variables.scss" as *;
+.section-layout {
+  width: 1140px;
+  margin: 80px auto 0 auto;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      display: block;
+      min-width: 80px;
+      height: 40px;
+      border: 1px solid $mint;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+  }
+  h3 {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(17, 34, 17);
+    opacity: 0.7;
+  }
+}

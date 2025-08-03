@@ -2,6 +2,7 @@ import Link from "next/link";
 import classes from "./reviews.module.scss";
 import Image from "next/image";
 import Fetch from "@/lib/fetch";
+import SectionLayout from "../section-layout/section-layout";
 
 type ReviewItem = {
   title: string;
@@ -17,10 +18,13 @@ export default async function Reviews() {
   const reviews: ReviewItem[] = await Fetch("reviews");
 
   return (
-    <section className={classes.reviews}>
-      <h2>Reviews</h2>
-      <h3>What people says about Golobe facilities</h3>
-      <ul>
+    <SectionLayout
+      link="/"
+      linkText="See all"
+      h2="Reviews"
+      h3="What people says about Golobe facilities"
+    >
+      <ul className={classes.reviews}>
         {reviews.map(({ title, text, rating, name, from, picture, id }) => {
           const formattedRating = parseFloat(rating);
           return (
@@ -46,6 +50,6 @@ export default async function Reviews() {
           );
         })}
       </ul>
-    </section>
+    </SectionLayout>
   );
 }

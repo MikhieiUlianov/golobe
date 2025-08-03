@@ -152,5 +152,35 @@
       "picture": "/img/reviews/picture.jpeg",
       "id": "sghevtvunabre"
     }
+  ],
+  "travels": [
+    {
+      "img": "/img/fall-into-travel/melbourne.jpeg",
+      "title": "Melbourne",
+      "text": "An amazing journey",
+      "price": "700",
+      "id": "sberwbetumreymirwt3468k7b78278356m"
+    },
+    {
+      "img": "/img/fall-into-travel/paris.jpeg",
+      "title": "Paris",
+      "text": "A paris adventure",
+      "price": "600",
+      "id": "sberwtbetumreymirwt3468k765b78256"
+    },
+    {
+      "img": "/img/fall-into-travel/london.jpeg",
+      "title": "London",
+      "text": "London views",
+      "price": "980",
+      "id": "wtbetumreymirwt3468k765b78278356m"
+    },
+    {
+      "img": "/img/fall-into-travel/columbia.jpeg",
+      "title": "Columbia",
+      "text": "Amazing streets",
+      "price": "350",
+      "id": "sberwtbetumreymirwt3468k765b7827836m"
+    }
   ]
 }

@@ -63,6 +63,7 @@ export default function FindTrip() {
           <ActionButtonWithText
             text="Find"
             isGreen={true}
+            link="/flights"
             iconComp={() => <SendIcon />}
           />
         </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import classes from "./place-trip.module.scss";
 import Fetch from "@/lib/fetch";
-import Link from "next/link";
+import SectionLayout from "../section-layout/section-layout";
 
 type PlaceItem = {
   img: string;
@@ -12,17 +12,13 @@ type PlaceItem = {
 export default async function PlaceTrip() {
   const places: PlaceItem[] = await Fetch("places");
   return (
-    <section className={classes["place-trip"]}>
-      <header>
-        <div>
-          <h2>Plan your perfect trip</h2>
-          <h3>Search Flights & Places Hire to our most popular destinations</h3>
-        </div>
-        <div>
-          <Link href={"/"}>See more places</Link>
-        </div>
-      </header>
-      <ul>
+    <SectionLayout
+      link="/"
+      linkText="See more places"
+      h2="Plan your perfect trip"
+      h3="Search Flights & Places Hire to our most popular destinations"
+    >
+      <ul className={classes["place-trip"]}>
         {places.map(({ img, title, id }) => (
           <li key={id}>
             <Image src={img} alt={title} width={90} height={90} />
@@ -33,6 +29,6 @@ export default async function PlaceTrip() {
           </li>
         ))}
       </ul>
-    </section>
+    </SectionLayout>
   );
 }
